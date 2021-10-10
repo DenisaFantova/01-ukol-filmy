@@ -1,4 +1,59 @@
 .movie {
+    display: flex;
     background-color: white;
-    border: 1px solid silver;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    min-height: 300px;
+}
+
+.movie p {
+    margin: 5px 0 5px 0;
+}
+
+.movie__poster{
+    max-height: 150px;
+    margin-right: 20px;
+}
+
+.movie__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(223, 0, 0);
+    margin-bottom: 15px;
+}
+
+.movie__rating {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 100px;    
+    text-align: center;
+    transform: rotate(-30deg);
+    background-color: rgb(255, 145, 0);
+    color: white;
+    padding-right: 10px;
+}
+
+.movie__max-rating {
+    font-size: 12px;
+}
+
+.movie__real-rating {
+    font-weight: bold;
+}
+
+.movie__main-roles {
+    font-weight: bold;
+    color: rgb(201, 45, 45);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.movie__actor-roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
